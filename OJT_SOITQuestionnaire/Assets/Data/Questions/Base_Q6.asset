@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608611e0fdd29740b0fb0cb5b06b6d2, type: 3}
+  m_Name: Base_Q6
+  m_EditorClassIdentifier: 
+  questionText: What would you want to learn in Mapua?
+  itemAText: Design algorithms to solve computing problems and come up with various
+    software development ideaS
+  itemBText: Conceptualize, design, and develop various entertainment media such
+    as video games
+  itemCText: 'Leverage the use of technology to improve business processes and organizational
+    efficiency. '
+  itemDText: "To use, manage, and maintain IT hardware and software infrastructure\r"
+  itemEText: Learn in-demand skills to leverage the opportunities of big data
+  Values:
+  - {x: 1, y: 5, z: 1}
+  - {x: 2, y: 5, z: 2}
+  - {x: 3, y: 5, z: 3}
+  - {x: 4, y: 5, z: 4}
+  - {x: 5, y: 5, z: 5}

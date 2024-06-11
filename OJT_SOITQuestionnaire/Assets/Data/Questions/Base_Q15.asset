@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f3e1b65b3024b45a666452a01b1548, type: 3}
+  m_Name: Base_Q15
+  m_EditorClassIdentifier: 
+  questionText: What are the career paths you want to pursue after graduating from
+    Mapua (select 3)?
+  itemsText:
+  - 3D Artist
+  - AI Engineer
+  - Business Analyst
+  - Cloud Engineer
+  - Computer Hardware Engineer
+  - Computer Programmer
+  - Computer scientist
+  - Cybersecurity
+  - Database Administrator
+  - Data Scientist
+  - Forensic Computer Analyst
+  - Game Animator
+  - Information Security Analyst
+  - IT Director
+  - IT Project Manager
+  - IT security specialist
+  - IT Support Technician
+  - Machine Learning Engineer
+  - Mobile App Developer
+  - Network Engineer
+  - Quality assurance tester
+  - Robotics Engineer
+  - Software Developer
+  - Support specialist
+  - Systems Administrators
+  - Systems Architect
+  - Technical Director
+  - User Experience (UX) Designer
+  - User Interface (UI) Designer
+  - Video Game Designer
+  - Video Game Developer
+  - Video Game Programmer
+  - Web Developer
+  Values:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
