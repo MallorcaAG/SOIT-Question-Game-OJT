@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Question/Multiple Choice Question")]
+//[CreateAssetMenu(menuName = "Question/Multiple Choice Question")]
 public class MultipleChoiceQuestion : Question
 {
     [TextArea] public string itemAText;

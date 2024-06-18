@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Question/DropDown Choice Question")]
+//[CreateAssetMenu(menuName = "Question/DropDown Choice Question")]
 public class DropDownSelectQuestion : Question
 {
     public string[] itemsText;
