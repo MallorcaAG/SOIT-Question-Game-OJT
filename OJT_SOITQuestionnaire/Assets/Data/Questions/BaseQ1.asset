@@ -15,4 +15,6 @@ MonoBehaviour:
   questionText: Answer true if the following statement applies to you, false if otherwise.
     I like mathematics
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: b9cf42da7752593468099cc4b56dd1a7, type: 2}
+  - {fileID: 11400000, guid: 84b8e8cab2025af4e9b0a5368a8d79a6, type: 2}

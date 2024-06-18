@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5563c91146ce2341a3396c0b432dd38, type: 3}
   m_Name: BaseA10 3
   m_EditorClassIdentifier: 
-  itemText: 
+  itemText: A collaborative, business-oriented environment
   itemScoreCS: 0
-  itemScoreIT: 0
+  itemScoreIT: 3
   itemScoreIS: 0
   itemScoreEMC: 0
-  itemScoreDS: 0
+  itemScoreDS: 2

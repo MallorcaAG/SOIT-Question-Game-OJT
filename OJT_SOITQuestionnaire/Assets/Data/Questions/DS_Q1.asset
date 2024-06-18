@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Do you enjoy extracting insights from large sets of data?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 921ed419f846e834a8251857008a1780, type: 2}
+  - {fileID: 11400000, guid: 1564f038fd9510746b533dd0478e0b59, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

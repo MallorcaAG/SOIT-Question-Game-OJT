@@ -15,4 +15,8 @@ MonoBehaviour:
   questionText: Are you interested in areas like business intelligence or IT project
     management?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 604af471a7d3e054396f95eec32a95f8, type: 2}
+  - {fileID: 11400000, guid: 1f4e4abc0ed96ab42899de0310769a19, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

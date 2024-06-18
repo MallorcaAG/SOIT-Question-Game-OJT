@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Do you like identifying patterns and trends in data?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: a6a8b9db2a6d25c4d88cad2608c305ec, type: 2}
+  - {fileID: 11400000, guid: 174fb94dd0bd0d54f8430bb090f08a1c, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

@@ -15,4 +15,8 @@ MonoBehaviour:
   questionText: Answer true if the following statement applies to you, false if otherwise.
     I am interested in programming.
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: bc17902e6644bc340a0d80137db383e1, type: 2}
+  - {fileID: 11400000, guid: 603867a4c57c76847b39b6ab372c71b5, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

@@ -15,4 +15,8 @@ MonoBehaviour:
   questionText: Answer true if the following statement applies to you, false if otherwise.
     I am interested in learning how to make different programs and applications
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 2f7941b0a3e47994f9395dc1853184ff, type: 2}
+  - {fileID: 11400000, guid: 47258eda1c1b5a04aaba2dd84085f308, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

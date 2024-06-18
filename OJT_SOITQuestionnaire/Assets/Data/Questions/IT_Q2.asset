@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Do you enjoy working with computer hardware and networks?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 71afd44d78d12c1449cbb16e53952c43, type: 2}
+  - {fileID: 11400000, guid: 8f10b0ac5090f4a409bfce337c058fb8, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

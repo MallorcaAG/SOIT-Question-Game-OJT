@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Do you enjoy working with numbers and statistics?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 8c5181c11d8a5f94ebf1b2339a42e605, type: 2}
+  - {fileID: 11400000, guid: 6958e7d888f602e43ba4431f4bfa934c, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

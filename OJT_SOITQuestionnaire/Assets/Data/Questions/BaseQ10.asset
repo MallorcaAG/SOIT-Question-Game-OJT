@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: What type of work environment do you see yourself thriving in?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 7c407c10ff92cca4c95f73e66e9c3d6d, type: 2}
+  - {fileID: 11400000, guid: 1de9225dac5803f49909e1b2a10b78be, type: 2}
+  - {fileID: 11400000, guid: e4e9d7aa1f47a534e9a53baa67f0ac9c, type: 2}
+  - {fileID: 11400000, guid: 87c0586bd19ab8f40bfe60b4110c9300, type: 2}
+  - {fileID: 11400000, guid: 748c7babbb8a0d94da5409a610db1122, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

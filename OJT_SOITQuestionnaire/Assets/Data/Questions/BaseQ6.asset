@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Which school subject did you enjoy the most? Select all that apply.
   questionType: 1
-  items: []
+  items:
+  - {fileID: 11400000, guid: a8a1e61a11fa8664dbcf30ac6a56e832, type: 2}
+  - {fileID: 11400000, guid: ff336fcc88c875c45bf9ffe6fbb104e9, type: 2}
+  - {fileID: 11400000, guid: b31a91d307a0f924cbe002e4c2c0ed5e, type: 2}
+  - {fileID: 11400000, guid: 7350f9e290ab1164f91c76f3ab893a46, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

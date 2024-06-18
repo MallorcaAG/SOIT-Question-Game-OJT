@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5563c91146ce2341a3396c0b432dd38, type: 3}
   m_Name: BaseA2 2
   m_EditorClassIdentifier: 
-  itemText: 
-  itemScoreCS: 0
-  itemScoreIT: 0
-  itemScoreIS: 0
-  itemScoreEMC: 0
-  itemScoreDS: 0
+  itemText: False
+  itemScoreCS: 1
+  itemScoreIT: 1
+  itemScoreIS: 5
+  itemScoreEMC: 3
+  itemScoreDS: 3

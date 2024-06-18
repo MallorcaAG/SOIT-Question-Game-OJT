@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Do you like troubleshooting and fixing hardware and software problems?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 407cc2e65a66ab242b9ee7a07c6fe4fb, type: 2}
+  - {fileID: 11400000, guid: 4418d75b61482fc47ba1291a010f559f, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

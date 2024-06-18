@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5563c91146ce2341a3396c0b432dd38, type: 3}
   m_Name: BaseA5 3
   m_EditorClassIdentifier: 
-  itemText: 
+  itemText: Leverage the use of technology to improve business processes and organizational
+    efficiency.
   itemScoreCS: 0
-  itemScoreIT: 0
-  itemScoreIS: 0
+  itemScoreIT: 2
+  itemScoreIS: 3
   itemScoreEMC: 0
   itemScoreDS: 0

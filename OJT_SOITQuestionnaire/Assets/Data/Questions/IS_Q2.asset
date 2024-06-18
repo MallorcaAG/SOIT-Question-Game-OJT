@@ -15,4 +15,8 @@ MonoBehaviour:
   questionText: Do you have a knack for understanding both technology and business
     processes?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 699d21463cc0bf748a4cbc67eeae284a, type: 2}
+  - {fileID: 11400000, guid: 8270580533115a448af5679e2e90049b, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

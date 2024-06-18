@@ -15,4 +15,8 @@ MonoBehaviour:
   questionText: Do you enjoy playing video games and have an interest in how they
     are made?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 90fb5e41ca33773499a4a8d215c37ec9, type: 2}
+  - {fileID: 11400000, guid: 3e512e8cb8387724d8752c1c86dfacc9, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

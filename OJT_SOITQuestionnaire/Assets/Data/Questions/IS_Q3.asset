@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Are you comfortable with both technical and business aspects of projects?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 7b50c9e50c854b644a23e545386504d9, type: 2}
+  - {fileID: 11400000, guid: b2344d0d0adf02f4d888b13b7e117a3b, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

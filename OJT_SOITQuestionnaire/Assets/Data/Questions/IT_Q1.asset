@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Are you interested in fields such as cloud computing or cybersecurity?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: d37cd16bcd94ed049bcac51ca871057e, type: 2}
+  - {fileID: 11400000, guid: d7f6ce67a18e78048a106ad180416017, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

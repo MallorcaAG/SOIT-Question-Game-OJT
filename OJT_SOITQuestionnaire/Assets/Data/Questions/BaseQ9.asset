@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Which of these do you find most rewarding?
   questionType: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: b6d020308a830b74d9e202764aefc2c4, type: 2}
+  - {fileID: 11400000, guid: 987b319d5fd241340a2f527c4a6e62b2, type: 2}
+  - {fileID: 11400000, guid: f88b57628c6abea47a69d31cc1c21d2c, type: 2}
+  - {fileID: 11400000, guid: 7f7745af87044f54f8f5cab90f669fcb, type: 2}
+  - {fileID: 11400000, guid: c88723e3f5bc3ac46a3532a4e2c74b7e, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

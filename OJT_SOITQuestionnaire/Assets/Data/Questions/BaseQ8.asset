@@ -15,4 +15,11 @@ MonoBehaviour:
   questionText: How would you describe your approach to challenges? Select all that
     apply.
   questionType: 1
-  items: []
+  items:
+  - {fileID: 11400000, guid: 1dded0909a88f914fa165296c78c3742, type: 2}
+  - {fileID: 11400000, guid: 185efbcdcc2065043a68647079083769, type: 2}
+  - {fileID: 11400000, guid: 5f91f0b8f9f02a24c887d1f4d2778271, type: 2}
+  - {fileID: 11400000, guid: ad13df48e254c074d8b6bf739ef32aec, type: 2}
+  - {fileID: 11400000, guid: 9f1ca0f9df7523e438f49af8a7826f7d, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

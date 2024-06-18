@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5563c91146ce2341a3396c0b432dd38, type: 3}
-  m_Name: BaseA10 2
+  m_Name: EMC_A3 2
   m_EditorClassIdentifier: 
-  itemText: A dynamic, technical support and operations environment
-  itemScoreCS: 0
-  itemScoreIT: 3
-  itemScoreIS: 1
-  itemScoreEMC: 0
-  itemScoreDS: 0
+  itemText: No
+  itemScoreCS: 5
+  itemScoreIT: 5
+  itemScoreIS: 5
+  itemScoreEMC: 1
+  itemScoreDS: 5
