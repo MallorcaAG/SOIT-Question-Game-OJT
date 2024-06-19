@@ -35,7 +35,7 @@ public class Question : ScriptableObject
         scrambledArray = itemsCopy;
     }
 
-    private void copyArray()
+    public void copyArray()
     {
         scrambledArray = new Choice[items.Length];
         for (int i = 0; i < items.Length;i++)

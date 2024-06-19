@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: BaseQ5
   m_EditorClassIdentifier: 
   questionText: "What would you want to learn in Mapua. Select all that apply\r"
-  questionType: 0
+  questionType: 1
   items:
   - {fileID: 11400000, guid: 711aca64a11291b4da47827ee50ecb81, type: 2}
   - {fileID: 11400000, guid: 5f134e05ea0f3be4880f882523bdd2d7, type: 2}
   - {fileID: 11400000, guid: b2bf90c594d737d4a8b8a7172c0d8120, type: 2}
   - {fileID: 11400000, guid: f9a199b24f525ea4986fb2395f4f7710, type: 2}
   - {fileID: 11400000, guid: af52accff59535e48b76e0c632045157, type: 2}
-  scrambleItems: 0
+  scrambleItems: 1
   scrambledArray:
-  - {fileID: 11400000, guid: 5f134e05ea0f3be4880f882523bdd2d7, type: 2}
   - {fileID: 11400000, guid: af52accff59535e48b76e0c632045157, type: 2}
-  - {fileID: 11400000, guid: f9a199b24f525ea4986fb2395f4f7710, type: 2}
   - {fileID: 11400000, guid: b2bf90c594d737d4a8b8a7172c0d8120, type: 2}
+  - {fileID: 11400000, guid: 5f134e05ea0f3be4880f882523bdd2d7, type: 2}
   - {fileID: 11400000, guid: 711aca64a11291b4da47827ee50ecb81, type: 2}
+  - {fileID: 11400000, guid: f9a199b24f525ea4986fb2395f4f7710, type: 2}

@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: Answer true if the following statement applies to you, false if otherwise.
     I am interested in how computers and software work.
-  questionType: 1
+  questionType: 0
   items:
   - {fileID: 11400000, guid: 6f95bfbee7da8b840bc5a52bc3bcedd0, type: 2}
   - {fileID: 11400000, guid: 7a6653af44dd9834fa6f2c02077186ee, type: 2}
   scrambleItems: 0
-  scrambledArray: []
+  scrambledArray:
+  - {fileID: 11400000, guid: 6f95bfbee7da8b840bc5a52bc3bcedd0, type: 2}
+  - {fileID: 11400000, guid: 7a6653af44dd9834fa6f2c02077186ee, type: 2}

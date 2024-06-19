@@ -20,5 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e4e9d7aa1f47a534e9a53baa67f0ac9c, type: 2}
   - {fileID: 11400000, guid: 87c0586bd19ab8f40bfe60b4110c9300, type: 2}
   - {fileID: 11400000, guid: 748c7babbb8a0d94da5409a610db1122, type: 2}
-  scrambleItems: 0
+  scrambleItems: 1
   scrambledArray: []
