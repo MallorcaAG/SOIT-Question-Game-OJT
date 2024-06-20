@@ -22,7 +22,7 @@ public class ItemButton : MonoBehaviour
     }
     public void itemToggled(Boolean active)
     {
-        Debug.Log(active);
+        //Debug.Log(active);
         if(active)
         {
             onItemSelected.Raise(this, myData);

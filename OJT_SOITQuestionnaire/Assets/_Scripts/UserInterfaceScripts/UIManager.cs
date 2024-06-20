@@ -34,17 +34,6 @@ public class UIManager : MonoBehaviour
             buttonObjects[i].GetComponent<ItemButton>().setData(q.scrambledArray[i]);
             itemTexts[i].text = q.scrambledArray[i].itemText;
 
-
-            /* NOTE:
-             *          DONE
-             * Attach a 'DataHolder' script to all button game object, and assign a Choice scriptable object
-             * as one of its fields during runtime. This will be used later to get score of selected choice.
-             * 
-             * DataHolder script will be used by the Button component to trigger a GameEvent that will
-             * send data to GameManager and trigger Scene change.
-             * 
-             * I think move all these UI assignment stuff to another script.
-             */
         }
 
 

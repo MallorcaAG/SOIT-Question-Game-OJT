@@ -144,14 +144,32 @@ public class GameManager : MonoBehaviour
         list[3].x = (int)Category.EMC; list[3].y = ScoreEMC;
         list[4].x = (int)Category.DS; list[4].y = ScoreDS;
 
-        Vector2[] sortedList = list.OrderBy(v => v.y).ToArray<Vector2>();
+        Vector2[] sortedList = list.OrderByDescending(v => v.y).ToArray<Vector2>();
         scoresRanking = sortedList;
 
         for(int i = 0; i < scoresRanking.Length; i++)
         {
-            Debug.Log(scoresRanking[i].x + " = " + scoresRanking[i].y);
+            Debug.Log(getCategory((int)scoresRanking[i].x) + " = " + scoresRanking[i].y);
         }
         
+    }
+    private string getCategory(int x)
+    {
+        switch(x)
+        {
+            case (int)Category.CS:
+                return "CS";
+            case (int)Category.IT:
+                return "IT";
+            case (int)Category.IS:
+                return "IS";
+            case (int)Category.EMC:
+                return "EMC";
+            case (int)Category.DS:
+                return "DS";
+            default:
+                return "na";
+        }
     }
 
 
