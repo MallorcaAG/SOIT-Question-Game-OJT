@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7674117667513908433}
   - component: {fileID: 325948856244585716}
   - component: {fileID: 8513302398222719713}
+  - component: {fileID: 6004135911609655079}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325948856244585716
 MonoBehaviour:
@@ -50,8 +51,6 @@ MonoBehaviour:
   - Question UI Template
   - Question UI Template 2
   - Question UI Template 3
-  questionText: {fileID: 0}
-  itemText: []
 --- !u!114 &8513302398222719713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,3 +79,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6004135911609655079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797785412918954585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls: []

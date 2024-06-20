@@ -15,16 +15,27 @@ public class QuestionManager : MonoBehaviour
     [SerializeField] private Question[] scrambledQuestionsArray;
 
     [Header("Event Reference")]
+    [SerializeField] private GameEvent onQuizStart;
     [SerializeField] private GameEvent onSendQuestionDetails;
+    [SerializeField] private GameEvent onQuizEnd;
+
 
     #region Encapsulation methods
-    public int CurrentQuestion
+    public int CurrentQuestionNumber
     {
-        get { return currentQuestion; }
+        get { return currentQuestion + 1; }
     }
     public void nextQuestion()
     {
         currentQuestion++;
+        if (currentQuestion < scrambledQuestionsArray.Length)
+        {
+            SendQuestionDetails(this, scrambledQuestionsArray[currentQuestion]);
+        }
+        else
+        {
+            EndQuiz();
+        }
     }
     public Question GetQuestion
     {
@@ -109,9 +120,18 @@ public class QuestionManager : MonoBehaviour
     #endregion
 
     #region Event Functions
+    public void StartQuiz()
+    {
+        onQuizStart.Raise(this, 0);
+        SendQuestionDetails(this, scrambledQuestionsArray[currentQuestion]);
+    }
     public void SendQuestionDetails(Component sender, object data)
     {
         onSendQuestionDetails.Raise(this, scrambledQuestionsArray[currentQuestion]);
+    }
+    public void EndQuiz()
+    {
+        onQuizEnd.Raise(this, 0);
     }
     #endregion
 

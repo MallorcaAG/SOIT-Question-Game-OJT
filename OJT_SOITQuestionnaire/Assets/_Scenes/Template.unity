@@ -236,6 +236,9 @@ GameObject:
   m_Component:
   - component: {fileID: 316659314}
   - component: {fileID: 316659313}
+  - component: {fileID: 316659316}
+  - component: {fileID: 316659315}
+  - component: {fileID: 316659317}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -260,7 +263,7 @@ MonoBehaviour:
   scoreIS: 0
   scoreEMC: 0
   scoreDS: 0
-  onQuizStart: {fileID: 11400000, guid: 365ee03a8377b314087badad6704d73a, type: 2}
+  scoresRanking: []
 --- !u!4 &316659314
 Transform:
   m_ObjectHideFlags: 0
@@ -276,6 +279,90 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316659315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316659312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a15b217d6714b5e418e9536cb05b3cdd, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 316659313}
+        m_TargetAssemblyTypeName: GameManager, Manager
+        m_MethodName: receiveSubtractData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &316659316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316659312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 4fdbcd4f9f6e69941a3ab0de93a708cc, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 316659313}
+        m_TargetAssemblyTypeName: GameManager, Manager
+        m_MethodName: receiveAddData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &316659317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316659312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 316659313}
+        m_TargetAssemblyTypeName: GameManager, Manager
+        m_MethodName: sortScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &498131089
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,8 +447,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316659313}
-        m_TargetAssemblyTypeName: GameManager, Manager
+      - m_Target: {fileID: 1803835034}
+        m_TargetAssemblyTypeName: QuestionManager, Manager
         m_MethodName: StartQuiz
         m_Mode: 1
         m_Arguments:
@@ -760,7 +847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803835033}
   - component: {fileID: 1803835034}
-  - component: {fileID: 1803835035}
+  - component: {fileID: 1803835036}
   m_Layer: 0
   m_Name: QuestionManager
   m_TagString: Untagged
@@ -808,7 +895,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9150fd60cedcb154a99cb22b30ef70e7, type: 2}
   - {fileID: 11400000, guid: 64fb51692eb40ce44913c896f72f017f, type: 2}
   - {fileID: 11400000, guid: f12f29cb5751b694f8289589df54ee06, type: 2}
-  - {fileID: 11400000, guid: 86170f75c6ea81343981fb68da65d564, type: 2}
   - {fileID: 11400000, guid: 738bdc8bd0d14a44b9032b467864de61, type: 2}
   - {fileID: 11400000, guid: 485065394ad2abe448d00b92e8fd4f1a, type: 2}
   - {fileID: 11400000, guid: 182586703521ba94894fdd7b69453b48, type: 2}
@@ -826,8 +912,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43110ac789902244f92bc7559a238ca8, type: 2}
   scrambleQuestions: 1
   scrambledQuestionsArray: []
+  onQuizStart: {fileID: 11400000, guid: 365ee03a8377b314087badad6704d73a, type: 2}
   onSendQuestionDetails: {fileID: 11400000, guid: f17a51759eb4c554c9eaf51ba573ab55, type: 2}
---- !u!114 &1803835035
+  onQuizEnd: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
+--- !u!114 &1803835036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,14 +927,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 365ee03a8377b314087badad6704d73a, type: 2}
+  gameEvent: {fileID: 11400000, guid: 03a07ffe7166dcc49a97a6aa4968a554, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1803835034}
         m_TargetAssemblyTypeName: QuestionManager, Manager
-        m_MethodName: SendQuestionDetails
-        m_Mode: 0
+        m_MethodName: nextQuestion
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

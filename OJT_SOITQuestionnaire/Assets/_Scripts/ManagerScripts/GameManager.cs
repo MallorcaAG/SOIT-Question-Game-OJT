@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor.Build.Player;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,9 +14,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int scoreIS = 0;
     [SerializeField] private int scoreEMC = 0;
     [SerializeField] private int scoreDS = 0;
-
-    [Header("Event Reference")]
-    [SerializeField] private GameEvent onQuizStart;
+    [Header("X = Category, Y = Score" + "\n" +
+             "\tX: 0 = na \n" + "" +
+             "\t    1 = CS \n" +
+             "\t    2 = IT \n" +
+             "\t    3 = IS \n" +
+             "\t    4 = EMC \n" +
+             "\t    5 = DS \n" +
+             "\t    9 = SOIT")]
+    [Tooltip("X = Category, Y = Score" + "\n" +
+             "\tX: 0 = na \n" + "" +
+             "\t    1 = CS \n" +
+             "\t    2 = IT \n" +
+             "\t    3 = IS \n" +
+             "\t    4 = EMC \n" +
+             "\t    5 = DS \n" +
+             "\t    9 = SOIT")]
+    [SerializeField] private Vector2[] scoresRanking;
 
     #region Encapsulation methods
     public int ScoreCS
@@ -57,6 +73,26 @@ public class GameManager : MonoBehaviour
     {
         scoreDS += num;
     }
+    public void subtractCS(int num)
+    {
+        scoreCS -= num;
+    }
+    public void subtractIT(int num)
+    {
+        scoreIT -= num;
+    }
+    public void subtractIS(int num)
+    {
+        scoreIS -= num;
+    }
+    public void subtractEMC(int num)
+    {
+        scoreEMC -= num;
+    }
+    public void subtractDS(int num)
+    {
+        scoreDS -= num;
+    }
     #endregion
 
     #region Singleton functions
@@ -75,10 +111,51 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Event methods
-    public void StartQuiz()
+    
+    public void receiveAddData(Component sender, object data)
     {
-        onQuizStart.Raise(this, 0);
+        Choice c = (Choice)data;
+        addCS(c.itemScoreCS);
+        addIT(c.itemScoreIT);
+        addIS(c.itemScoreIS);
+        addEMC(c.itemScoreEMC);
+        addDS(c.itemScoreDS);
     }
+    public void receiveSubtractData(Component sender, object data)
+    {
+        Choice c = (Choice)data;
+        subtractCS(c.itemScoreCS);
+        subtractIT(c.itemScoreIT);
+        subtractIS(c.itemScoreIS);
+        subtractEMC(c.itemScoreEMC);
+        subtractDS(c.itemScoreDS);
+    }
+
     #endregion
+
+    #region Final Score Functions
+    
+    public void sortScore()
+    {
+        Vector2[] list = new Vector2[5];
+        list[0].x = (int)Category.CS; list[0].y = scoreCS;
+        list[1].x = (int)Category.IT; list[1].y = scoreIT;
+        list[2].x = (int)Category.IS; list[2].y = ScoreIS;
+        list[3].x = (int)Category.EMC; list[3].y = ScoreEMC;
+        list[4].x = (int)Category.DS; list[4].y = ScoreDS;
+
+        Vector2[] sortedList = list.OrderBy(v => v.y).ToArray<Vector2>();
+        scoresRanking = sortedList;
+
+        for(int i = 0; i < scoresRanking.Length; i++)
+        {
+            Debug.Log(scoresRanking[i].x + " = " + scoresRanking[i].y);
+        }
+        
+    }
+
+
+    #endregion
+
 }
 
