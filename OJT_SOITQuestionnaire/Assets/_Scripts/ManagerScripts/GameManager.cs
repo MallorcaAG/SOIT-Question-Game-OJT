@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Vector2[] scoresRanking;
 
     #region Encapsulation methods
+    public Vector2[] Scores
+    {
+        get { return scoresRanking; } 
+    }
     public int ScoreCS
     {
         get { return scoreCS; }
@@ -147,33 +151,16 @@ public class GameManager : MonoBehaviour
         Vector2[] sortedList = list.OrderByDescending(v => v.y).ToArray<Vector2>();
         scoresRanking = sortedList;
 
-        for(int i = 0; i < scoresRanking.Length; i++)
-        {
-            Debug.Log(getCategory((int)scoresRanking[i].x) + " = " + scoresRanking[i].y);
-        }
+        
         
     }
-    private string getCategory(int x)
-    {
-        switch(x)
-        {
-            case (int)Category.CS:
-                return "CS";
-            case (int)Category.IT:
-                return "IT";
-            case (int)Category.IS:
-                return "IS";
-            case (int)Category.EMC:
-                return "EMC";
-            case (int)Category.DS:
-                return "DS";
-            default:
-                return "na";
-        }
-    }
+    
 
 
     #endregion
+
+
+
 
 }
 

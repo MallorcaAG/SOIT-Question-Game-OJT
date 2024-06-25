@@ -51,6 +51,7 @@ MonoBehaviour:
   - Question UI Template
   - Question UI Template 2
   - Question UI Template 3
+  - End Template
 --- !u!114 &8513302398222719713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,4 +95,16 @@ MonoBehaviour:
   gameEvent: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
   response:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 325948856244585716}
+        m_TargetAssemblyTypeName: SceneLoader, Manager
+        m_MethodName: EndGameScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

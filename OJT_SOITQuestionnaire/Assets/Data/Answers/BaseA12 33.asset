@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BaseA12 33
   m_EditorClassIdentifier: 
   itemText: Web Developer
-  itemScoreCS: 0
-  itemScoreIT: 0
-  itemScoreIS: 0
-  itemScoreEMC: 0
-  itemScoreDS: 1
+  itemScoreCS: 1
+  itemScoreIT: 1
+  itemScoreIS: 1
+  itemScoreEMC: 1
+  itemScoreDS: 0

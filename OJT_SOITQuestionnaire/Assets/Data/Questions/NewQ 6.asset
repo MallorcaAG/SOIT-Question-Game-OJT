@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7fce25976e2c4498c9e169135f2312, type: 3}
+  m_Name: NewQ 6
+  m_EditorClassIdentifier: 
+  questionText: How do you handle change and uncertainty?
+  questionType: 0
+  items:
+  - {fileID: 11400000, guid: a202505b032a90b4eada521f7cb1067f, type: 2}
+  - {fileID: 11400000, guid: 2f2f95a3fda197946b421cd046ef83b0, type: 2}
+  - {fileID: 11400000, guid: df6cc1d70832cc1489bd62c59d0db802, type: 2}
+  - {fileID: 11400000, guid: 1e7b1f3c93fb9d849a20b41f120ef693, type: 2}
+  - {fileID: 11400000, guid: 214cbe7bd17b25c469a1cc8ea3ad8ffc, type: 2}
+  scrambleItems: 1
+  scrambledArray: []

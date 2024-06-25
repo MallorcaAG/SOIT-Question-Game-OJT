@@ -277,7 +277,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &316659315
 MonoBehaviour:
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803835034}
+      - m_Target: {fileID: 1264908324}
         m_TargetAssemblyTypeName: QuestionManager, Manager
         m_MethodName: StartQuiz
         m_Mode: 1
@@ -657,6 +657,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1264908324 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7061131790499676240, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+  m_PrefabInstance: {fileID: 1722891824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d02abb44020df449af522e252424d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606494941
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +803,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606494941}
   m_CullTransparentMesh: 1
+--- !u!1001 &1722891824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3029917739089181021, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_Name
+      value: QuestionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 397.3663
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 182.58951
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8943964
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104731501100835852, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1aa02083ef358cf40b054db85e24ac14, type: 3}
 --- !u!1 &1776223693
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,112 +909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   q: {fileID: 11400000, guid: c7e729dc71030ca4e939906176464374, type: 2}
---- !u!1 &1803835032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1803835033}
-  - component: {fileID: 1803835034}
-  - component: {fileID: 1803835036}
-  m_Layer: 0
-  m_Name: QuestionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1803835033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803835032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 397.3663, y: 182.58951, z: 0.8943964}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1803835034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803835032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d02abb44020df449af522e252424d72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentQuestion: 0
-  questions:
-  - {fileID: 11400000, guid: 84c7ecf163f34e84aa4acfa79dff6e6c, type: 2}
-  - {fileID: 11400000, guid: 24171cdfd6bc8534198ad3044158dd0d, type: 2}
-  - {fileID: 11400000, guid: c0335a28978da6e4f80025ccad95cddf, type: 2}
-  - {fileID: 11400000, guid: 0596a97f57d1a194f850e7d97d167673, type: 2}
-  - {fileID: 11400000, guid: c7e729dc71030ca4e939906176464374, type: 2}
-  - {fileID: 11400000, guid: 550e7222cf869bd4db576b678f899be4, type: 2}
-  - {fileID: 11400000, guid: 0a70a0834ad2c264c841606a43aebd14, type: 2}
-  - {fileID: 11400000, guid: f4a6c166e90f62e4cb175623249999f3, type: 2}
-  - {fileID: 11400000, guid: 9150fd60cedcb154a99cb22b30ef70e7, type: 2}
-  - {fileID: 11400000, guid: 64fb51692eb40ce44913c896f72f017f, type: 2}
-  - {fileID: 11400000, guid: f12f29cb5751b694f8289589df54ee06, type: 2}
-  - {fileID: 11400000, guid: 738bdc8bd0d14a44b9032b467864de61, type: 2}
-  - {fileID: 11400000, guid: 485065394ad2abe448d00b92e8fd4f1a, type: 2}
-  - {fileID: 11400000, guid: 182586703521ba94894fdd7b69453b48, type: 2}
-  - {fileID: 11400000, guid: 1d534764d9bc4144aa385e74c126573c, type: 2}
-  - {fileID: 11400000, guid: 497d2344c0c808e4d83cf3fbf9f6bde9, type: 2}
-  - {fileID: 11400000, guid: b44a0c65ffa887043826fe7638dde9e5, type: 2}
-  - {fileID: 11400000, guid: 87e862c28b39869498ba1181d3c81e3e, type: 2}
-  - {fileID: 11400000, guid: 2fa6dac327ae4624895db9a677e76d2f, type: 2}
-  - {fileID: 11400000, guid: 6c4023edd7201a44d823629c02da5842, type: 2}
-  - {fileID: 11400000, guid: 4cffaa6ffe8825e4a8bdb959c0a4edcf, type: 2}
-  - {fileID: 11400000, guid: 63051900760b6d14cac1190c13ddf2c8, type: 2}
-  - {fileID: 11400000, guid: 257526b90af2c0a4facd2178cbb74150, type: 2}
-  - {fileID: 11400000, guid: 498da7a7444d3ef458e90585da82414e, type: 2}
-  - {fileID: 11400000, guid: 076eda2cafa52f640a67f00a527a039f, type: 2}
-  - {fileID: 11400000, guid: 43110ac789902244f92bc7559a238ca8, type: 2}
-  scrambleQuestions: 1
-  scrambledQuestionsArray: []
-  onQuizStart: {fileID: 11400000, guid: 365ee03a8377b314087badad6704d73a, type: 2}
-  onSendQuestionDetails: {fileID: 11400000, guid: f17a51759eb4c554c9eaf51ba573ab55, type: 2}
-  onQuizEnd: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
---- !u!114 &1803835036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803835032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 03a07ffe7166dcc49a97a6aa4968a554, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1803835034}
-        m_TargetAssemblyTypeName: QuestionManager, Manager
-        m_MethodName: nextQuestion
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &7445300438946501781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,7 +919,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7674117667513908433, guid: 692dab9112abd8941a5211e47a1f8a85, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7674117667513908433, guid: 692dab9112abd8941a5211e47a1f8a85, type: 3}
       propertyPath: m_LocalPosition.x

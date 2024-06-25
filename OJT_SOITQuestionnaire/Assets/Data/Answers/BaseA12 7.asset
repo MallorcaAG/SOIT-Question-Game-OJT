@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BaseA12 7
   m_EditorClassIdentifier: 
   itemText: Computer scientist
-  itemScoreCS: 1
+  itemScoreCS: 3
   itemScoreIT: 0
   itemScoreIS: 0
   itemScoreEMC: 0

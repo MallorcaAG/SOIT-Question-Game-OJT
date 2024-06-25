@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7fce25976e2c4498c9e169135f2312, type: 3}
+  m_Name: NewQ 1
+  m_EditorClassIdentifier: 
+  questionText: Do you feel comfortable walking up to someone you find interesting
+    and striking up a conversation?
+  questionType: 0
+  items:
+  - {fileID: 11400000, guid: aa2227da0639c754b801865c96afa4d2, type: 2}
+  - {fileID: 11400000, guid: 6f897c1592844f7419fd7bbacf8ed9a3, type: 2}
+  scrambleItems: 0
+  scrambledArray: []

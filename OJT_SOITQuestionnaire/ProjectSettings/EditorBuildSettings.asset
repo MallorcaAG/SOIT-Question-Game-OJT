@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Question UI Template 3.unity
     guid: 7a080412943b5f14da6bd8e68ef3c8df
+  - enabled: 1
+    path: Assets/_Scenes/End Template.unity
+    guid: 7c1e2bde8eb10c640b327a25bd9cf9da
   m_configObjects: {}

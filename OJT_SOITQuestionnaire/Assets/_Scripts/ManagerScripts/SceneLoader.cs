@@ -51,4 +51,10 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+
+    public void EndGameScene()
+    {
+        SceneManager.LoadScene(sceneNames[4]);
+    }
+
 }
