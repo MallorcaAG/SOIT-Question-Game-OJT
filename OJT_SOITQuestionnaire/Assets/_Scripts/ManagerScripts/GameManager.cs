@@ -30,12 +30,24 @@ public class GameManager : MonoBehaviour
              "\t    4 = EMC \n" +
              "\t    5 = DS \n" +
              "\t    9 = SOIT")]
-    [SerializeField] private Vector2[] scoresRanking;
+    [SerializeField] private Vector2[] scoresOrderRanking;
+    [Tooltip("Index = Category" + "\n" +
+             "\tX: 0 = CS \n" + 
+             "\t    1 = IT \n" +
+             "\t    2 = IS \n" +
+             "\t    3 = EMC \n" +
+             "\t    4 = DS \n")]
+    [SerializeField] private int[] scoresOrderName;
+
 
     #region Encapsulation methods
-    public Vector2[] Scores
+    public int[] Scores
     {
-        get { return scoresRanking; } 
+        get { return scoresOrderName; }
+    }
+    public Vector2[] ScoresRanking
+    {
+        get { return scoresOrderRanking; } 
     }
     public int ScoreCS
     {
@@ -141,6 +153,16 @@ public class GameManager : MonoBehaviour
     
     public void sortScore()
     {
+        int[] scoresList = new int[5];
+        scoresList[0] = ScoreCS;
+        scoresList[1] = ScoreIT;
+        scoresList[2] = ScoreIS;
+        scoresList[3] = ScoreEMC;
+        scoresList[4] = ScoreDS;
+        scoresOrderName = scoresList;
+
+
+
         Vector2[] list = new Vector2[5];
         list[0].x = (int)Category.CS; list[0].y = scoreCS;
         list[1].x = (int)Category.IT; list[1].y = scoreIT;
@@ -149,10 +171,9 @@ public class GameManager : MonoBehaviour
         list[4].x = (int)Category.DS; list[4].y = ScoreDS;
 
         Vector2[] sortedList = list.OrderByDescending(v => v.y).ToArray<Vector2>();
-        scoresRanking = sortedList;
+        scoresOrderRanking = sortedList;
 
-        
-        
+
     }
     
 

@@ -1,24 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
 public class TestScipt : MonoBehaviour
 {
-
-    public Question q;
-
-    // Start is called before the first frame update
-    void Start()
+    
+/*
+    private void Start()
     {
-        scramble();
+        
+
     }
 
-    void scramble()
+    public void testCSIncreaseBtn()
     {
-        if (q.scrambleItems == true)
-        {
-            q.shuffleItems();
-        }
-
+        stats.increaseStat(Category.CS);
+        onStatChange.Raise(this, 0);
     }
+
+    public void testCSDecreaseBtn()
+    {
+        stats.decreaseStat(Category.CS);
+        onStatChange.Raise(this, 0);
+    }
+
+    public void testITIncreaseBtn()
+    {
+        stats.increaseStat(Category.IT);
+        onStatChange.Raise(this, 0);
+    }
+
+    public void testITDecreaseBtn()
+    {
+        stats.decreaseStat(Category.IT);
+        onStatChange.Raise(this, 0);
+    }*/
 }

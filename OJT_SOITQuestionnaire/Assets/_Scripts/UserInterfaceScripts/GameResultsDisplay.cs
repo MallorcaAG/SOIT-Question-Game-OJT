@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class GameResultsDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI display;
+    [SerializeField] private GameEvent onStatChange;
+    [SerializeField] private UI_StatsRadarChart uiStatsRadarChart;
 
-    private Vector2[] scores;
+    private Stats stats;
+
+    private int[] scores;
+    private Vector2[] scoresRanked;
     private GameManager gameManager;
     private string scoreString;
     private int scoreTotal;
@@ -17,17 +23,23 @@ public class GameResultsDisplay : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         scores = gameManager.Scores;
+        scoresRanked = gameManager.ScoresRanking;
 
-        for (int i = 0; i < scores.Length; i++)
+        for (int i = 0; i < scoresRanked.Length; i++)
         {
             /*Debug.Log(getCategory((int)scores[i].x) + " = " + scores[i].y);*/
-            scoreString += (getCategory((int)scores[i].x) + " = " + (scores[i].y).ToString() + "\n");
-            scoreTotal += (int)scores[i].y;
+            scoreString += (getCategory((int)scoresRanked[i].x) + " = " + (scoresRanked[i].y).ToString() + "\n");
+            scoreTotal += (int)scoresRanked[i].y;
         }
 
         scoreString += scoreTotal.ToString();
 
         display.text = scoreString;
+
+        Stats.STAT_MAX = (int)scoresRanked[0].y;
+        stats = new Stats(scores[0], scores[1], scores[2], scores[3], scores[4]);
+
+        uiStatsRadarChart.SetStats(stats);
     }
 
     private string getCategory(int x)
@@ -48,5 +60,7 @@ public class GameResultsDisplay : MonoBehaviour
                 return "na";
         }
     }
+
+
+
 }
-//Percentage (Add scores, divide certain score from the total) etc etc
