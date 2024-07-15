@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 325948856244585716}
   - component: {fileID: 8513302398222719713}
   - component: {fileID: 6004135911609655079}
+  - component: {fileID: 5141864340953575961}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325948856244585716
 MonoBehaviour:
@@ -47,11 +48,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNames:
-  - Template
-  - Question UI Template
-  - Question UI Template 2
-  - Question UI Template 3
-  - End Template
+  - Main Menu
+  - Single-Select
+  - Multi-Select
+  - 33 Item Question
+  - Results Screen
+  - Setup Mini
+  - Setup Full
 --- !u!114 &8513302398222719713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +103,34 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SceneLoader, Manager
         m_MethodName: EndGameScene
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5141864340953575961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797785412918954585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 9d977e36a105fd64383524fa4063b0f8, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 325948856244585716}
+        m_TargetAssemblyTypeName: SceneLoader, Manager
+        m_MethodName: Initialization
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

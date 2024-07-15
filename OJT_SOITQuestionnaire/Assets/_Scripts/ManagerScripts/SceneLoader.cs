@@ -7,6 +7,13 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [Header("Scene Name Reference")]
+    [Tooltip("Element 0: Load Main Menu" + "\n" +
+             "Element 1: Load Single-select Multiple Choice Question" + "\n" +
+             "Element 2: Load Multi-select Multiple Choice Question" + "\n" +
+             "Element 3: Load 33 Item Choice Question" + "\n" +
+             "Element 4: Load Results Page" + "\n" +
+             "Element 5: Load Setup Mini" + "\n" +
+             "Element 6: Load Setup Full" + "\n" )]
     [SerializeField] private string[] sceneNames;
 
     public void LoadScene(Component sender, object data)
@@ -51,6 +58,17 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    public void Initialization(Component sender, object data)
+    {
+        if((int)data == 0)
+        {
+            SceneManager.LoadScene(sceneNames[5]);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneNames[6]);
+        }
+    }
 
     public void EndGameScene()
     {

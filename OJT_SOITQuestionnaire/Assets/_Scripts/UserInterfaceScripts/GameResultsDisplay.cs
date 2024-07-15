@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GameResultsDisplay : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI display;
+    //[SerializeField] private TextMeshProUGUI display;
     [SerializeField] private GameEvent onStatChange;
     [SerializeField] private UI_StatsRadarChart uiStatsRadarChart;
 
@@ -24,6 +24,7 @@ public class GameResultsDisplay : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         scores = gameManager.Scores;
         scoresRanked = gameManager.ScoresRanking;
+        onStatChange.Raise(this, scoresRanked);
 
         for (int i = 0; i < scoresRanked.Length; i++)
         {
@@ -34,7 +35,8 @@ public class GameResultsDisplay : MonoBehaviour
 
         scoreString += scoreTotal.ToString();
 
-        display.text = scoreString;
+        //display.text = scoreString;
+        Debug.Log(scoreString);
 
         Stats.STAT_MAX = (int)scoresRanked[0].y;
         stats = new Stats(scores[0], scores[1], scores[2], scores[3], scores[4]);
@@ -42,7 +44,7 @@ public class GameResultsDisplay : MonoBehaviour
         uiStatsRadarChart.SetStats(stats);
     }
 
-    private string getCategory(int x)
+    public static string getCategory(int x)
     {
         switch (x)
         {

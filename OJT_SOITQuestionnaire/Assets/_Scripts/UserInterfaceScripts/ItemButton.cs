@@ -9,7 +9,7 @@ public class ItemButton : MonoBehaviour
     [Header("Events")]
     [SerializeField] private GameEvent onItemSelected;
     [SerializeField] private GameEvent onItemDeselected;
-    [SerializeField] private GameEvent onTriggerNextQuestion;
+    [SerializeField] private GameEvent onTriggerNextQuestion;   
 
     public void setData(Choice data)
     {
