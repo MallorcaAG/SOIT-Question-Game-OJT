@@ -655,7 +655,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990936756}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 081e724a0cfbbd042a93ac68cafdc382, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ea70bc562c94fb84caafadd611e88c39, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}
@@ -669,12 +669,14 @@ VideoPlayer:
   m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -870,7 +872,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1073,8 +1075,8 @@ MonoBehaviour:
   - 'but rather be a helpful tool to nudge you towards your ideal program. '
   - It is ultimately up to you, where you want to take your future.
   - 'With all that said, let''s begin! '
-  textSpeed: 0.05
-  textDelayBeforeNextLine: 2
+  textSpeed: 0.045
+  textDelayBeforeNextLine: 1.5
   dialogueType: 0
 --- !u!224 &2063269863
 RectTransform:
