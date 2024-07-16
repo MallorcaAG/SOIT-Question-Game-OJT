@@ -15,6 +15,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private float textSpeed;
     [SerializeField] private float textDelayBeforeNextLine = 3f;
     [SerializeField] private DialogueType dialogueType;
+    [SerializeField] private GameEvent onDescribeCourse;
+
 
     private int index;
     private Vector2[] scores;
@@ -113,51 +115,72 @@ public class Dialogue : MonoBehaviour
         float course1ToCourse2Diff = course1Score - course2Score;
 
         lines[0] = "The results are in!";
-        lines[1] = "You’re a "+course1+" major!";
-        lines[2] = "Scoring a "+course1Score.ToString()+", "+course1ToMeanDiff.ToString()+" points off the average.";
-        lines[3] = "Your second highest course is "+course2+ " with a score of "+course2Score.ToString();
-        lines[4] = "That's a " + course1ToCourse2Diff.ToString() + " point difference from your top scoring course.";
-        lines[5] = "Your lowest was "+lastCourse+ " with a score of "+lastCourseScore.ToString();
+        lines[1] = " ";
+        lines[2] = "You’re a "+course1+" major!";
+        lines[3] = "Scoring a "+course1Score.ToString()+", "+course1ToMeanDiff.ToString()+" points off the average.";
+        lines[4] = "Your second highest course is "+course2+ " with a score of "+course2Score.ToString();
+        lines[5] = "That's a " + course1ToCourse2Diff.ToString() + " point difference from your top scoring course.";
+        lines[6] = "Your lowest was "+lastCourse+ " with a score of "+lastCourseScore.ToString();
         switch((Category)scores[0].x)
         {
             case Category.CS:
-                lines[6] = "Computer Science is . . .";
-                lines[7] = "among us";
-                lines[8] = "sus";
-                lines[9] = "ding ding ding ding";
-                lines[10] = "test text";
+                onDescribeCourse.Raise(this, Category.CS);
+
+                lines[7] = " ";
+
+                lines[8] = "Computer Science is . . .";
+                lines[9] = "among us";
+                lines[10] = "sus";
+                lines[11] = "ding ding ding ding";
+                lines[12] = "test text";
                 break;
 
             case Category.IT:
-                lines[6] = "Information Technology is , no stranger to love";
-                lines[7] = "IT knows the rules, and so do I";
-                lines[8] = "A full commitments what IT's looking for";
-                lines[9] = "Never gunna give you up";
-                lines[10] = "test text";
+                onDescribeCourse.Raise(this, Category.IT);
+
+                lines[7] = " ";
+
+                lines[8] = "Information Technology is , no stranger to love";
+                lines[9] = "IT knows the rules, and so do I";
+                lines[10] = "A full commitments what IT's looking for";
+                lines[11] = "Never gunna give you up";
+                lines[12] = "test text";
                 break;
 
             case Category.IS:
-                lines[6] = "Information System is . . .";
-                lines[7] = "Skibidi dop dop dop";
-                lines[8] = "yes yes";
-                lines[9] = "Skibidi";
-                lines[10] = "test text";
+                onDescribeCourse.Raise(this, Category.IS);
+
+                lines[7] = " ";
+
+                lines[8] = "Information System is . . .";
+                lines[9] = "Skibidi dop dop dop";
+                lines[10] = "yes yes";
+                lines[11] = "Skibidi";
+                lines[12] = "test text";
                 break;
 
             case Category.EMC:
-                lines[6] = "Entertainment and Multimedia Computing is. . .";
-                lines[7] = "shikanokonokokoshitantan";
-                lines[8] = "shikanokonokokoshitantan";
+                onDescribeCourse.Raise(this, Category.EMC);
+
+                lines[7] = " ";
+
+                lines[8] = "Entertainment and Multimedia Computing is. . .";
                 lines[9] = "shikanokonokokoshitantan";
-                lines[10] = "test text";
+                lines[10] = "shikanokonokokoshitantan";
+                lines[11] = "shikanokonokokoshitantan";
+                lines[12] = "test text";
                 break;
 
             case Category.DS:
-                lines[6] = "Data Science is . . .";
-                lines[7] = "text";
-                lines[8] = "test";
-                lines[9] = "E";
-                lines[10] = "test text";
+                onDescribeCourse.Raise(this, Category.DS);
+
+                lines[7] = " ";
+
+                lines[8] = "Data Science is . . .";
+                lines[9] = "text";
+                lines[10] = "test";
+                lines[11] = "E";
+                lines[12] = "test text";
                 break;
 
             default:
@@ -165,7 +188,7 @@ public class Dialogue : MonoBehaviour
                 break;
         }
 
-        lines[11] = "Feel free to download the data as reference if you so desire.";
+        lines[13] = "Feel free to download the data as reference if you so desire.";
     }
 
 

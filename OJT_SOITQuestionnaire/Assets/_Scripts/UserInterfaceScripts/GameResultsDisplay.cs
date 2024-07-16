@@ -8,6 +8,7 @@ public class GameResultsDisplay : MonoBehaviour
 {
     //[SerializeField] private TextMeshProUGUI display;
     [SerializeField] private GameEvent onStatChange;
+    [SerializeField] private Animator myAnimation;
     [SerializeField] private UI_StatsRadarChart uiStatsRadarChart;
 
     private Stats stats;
@@ -42,6 +43,11 @@ public class GameResultsDisplay : MonoBehaviour
         stats = new Stats(scores[0], scores[1], scores[2], scores[3], scores[4]);
 
         uiStatsRadarChart.SetStats(stats);
+    }
+
+    public void startAnimation()
+    {
+        uiStatsRadarChart.ActivateAnimation();
     }
 
     public static string getCategory(int x)

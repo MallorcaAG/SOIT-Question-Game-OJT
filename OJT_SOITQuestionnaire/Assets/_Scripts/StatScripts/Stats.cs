@@ -79,7 +79,7 @@ public class Stats
 
         public int Stat
         {
-            get { return Stat; }
+            get { return stat; }
         }
         public float StatNormalized
         {
