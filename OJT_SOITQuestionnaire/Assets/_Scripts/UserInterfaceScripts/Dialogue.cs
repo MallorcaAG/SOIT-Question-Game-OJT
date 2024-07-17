@@ -7,6 +7,7 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     [SerializeField] private GameEvent onDialogueDone;
+    [SerializeField] private GameEvent onDoneTalking;
     [SerializeField] private TextMeshProUGUI ui;
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
@@ -103,6 +104,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            onDoneTalking.Raise(this, 0);
         }
     }
     

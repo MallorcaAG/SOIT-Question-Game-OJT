@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,8 +9,10 @@ public class GameResultsDisplay : MonoBehaviour
 {
     //[SerializeField] private TextMeshProUGUI display;
     [SerializeField] private GameEvent onStatChange;
+    [SerializeField] private GameEvent onCourseVideoStart;
     [SerializeField] private Animator myAnimation;
     [SerializeField] private UI_StatsRadarChart uiStatsRadarChart;
+    [SerializeField] private TextMeshProUGUI[] scoreDisplay;
 
     private Stats stats;
 
@@ -18,6 +21,11 @@ public class GameResultsDisplay : MonoBehaviour
     private GameManager gameManager;
     private string scoreString;
     private int scoreTotal;
+
+    private readonly int StartVid = Animator.StringToHash("CourseVideoStart");
+    private readonly int EndVid = Animator.StringToHash("CourseVideoEnd");
+
+    private readonly int TalkingDone = Animator.StringToHash("TalkingDone");
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +40,27 @@ public class GameResultsDisplay : MonoBehaviour
             /*Debug.Log(getCategory((int)scores[i].x) + " = " + scores[i].y);*/
             scoreString += (getCategory((int)scoresRanked[i].x) + " = " + (scoresRanked[i].y).ToString() + "\n");
             scoreTotal += (int)scoresRanked[i].y;
+
+            switch ((int)scoresRanked[i].x)
+            {
+                case (int)Category.CS:
+                    scoreDisplay[0].text = (scoresRanked[i].y).ToString();
+                    break;
+                case (int)Category.IT:
+                    scoreDisplay[1].text = (scoresRanked[i].y).ToString();
+                    break;
+                case (int)Category.IS:
+                    scoreDisplay[2].text = (scoresRanked[i].y).ToString();
+                    break;
+                case (int)Category.EMC:
+                    scoreDisplay[3].text = (scoresRanked[i].y).ToString();
+                    break;
+                case (int)Category.DS:
+                    scoreDisplay[4].text = (scoresRanked[i].y).ToString();
+                    break;
+                default:
+                    break;
+            }
         }
 
         scoreString += scoreTotal.ToString();
@@ -48,6 +77,30 @@ public class GameResultsDisplay : MonoBehaviour
     public void startAnimation()
     {
         uiStatsRadarChart.ActivateAnimation();
+    }
+
+    public void animationState(Component sender, object data)
+    {
+        int num = (int)data;
+
+        switch (num)
+        {
+            case 1:
+                myAnimation.CrossFade(StartVid, 0, 0);
+
+                onCourseVideoStart.Raise(this, 0);
+                break;
+
+            case 2:
+                myAnimation.CrossFade(EndVid, .5f, 0);
+
+                break;
+        }
+    }
+
+    public void adjustStatsGraphPosition()
+    {
+        myAnimation.CrossFade(TalkingDone, 0.5f, 0);
     }
 
     public static string getCategory(int x)

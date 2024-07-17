@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueBuilder : MonoBehaviour
 {
     [SerializeField] private GameEvent sendDialogue;
+    [SerializeField] private GameEvent sendData;
     [SerializeField] private string[] lines;
     private Vector2[] scores;
     private int num = 0;
@@ -52,21 +53,44 @@ public class DialogueBuilder : MonoBehaviour
         int course2Score = (int)scores[1].y;
         string lastCourse = GameResultsDisplay.getCategory((int)scores[4].x);
         int lastCourseScore = (int)scores[4].y;
+        int course3Score = (int)scores[2].y;
+        int course4Score = (int)scores[3].y;
 
-
-        float mean = (scores[0].y + scores[1].y + scores[2].y + scores[3].y + scores[4].y) / 5;
+        float total = scores[0].y + scores[1].y + scores[2].y + scores[3].y + scores[4].y;
+        float mean = (total) / 5;
+        float median = scores[2].y;
         float course1ToMeanDiff = course1Score - mean;
         float course1ToCourse2Diff = course1Score - course2Score;
+        float course1ScorePecent = (course1Score / total) * 100;
+        float course2ScorePecent = (course2Score / total) * 100;
+        float course3ScorePecent = (course3Score / total) * 100;
+        float course4ScorePecent = (course4Score / total) * 100;
+        float course5ScorePecent = (lastCourseScore / total) * 100;
+
 
         lines[0] = "The results are in!";
         lines[1] = " ";
         lines[2] = "You’re a " + course1 + " major!";
-        lines[3] = "Scoring a " + course1Score.ToString() + ", " + course1ToMeanDiff.ToString("#.##") + " points off the average.";
+        lines[3] = "Scoring a " + course1Score.ToString() + ", " + course1ToMeanDiff.ToString("0.##") + " points off the average.";
         lines[4] = "Your second highest course is " + course2 + " with a score of " + course2Score.ToString();
-        lines[5] = "That's a " + course1ToCourse2Diff.ToString("#.##") + " point difference from your top scoring course.";
+        lines[5] = "That's a " + course1ToCourse2Diff.ToString("0.##") + " point difference from your top scoring course.";
         lines[6] = "Your lowest was " + lastCourse + " with a score of " + lastCourseScore.ToString();
         lines[7] = "    ";
 
+        float[] data = new float[10];
+        data[0] = total;
+        data[1] = mean;
+        data[2] = median;
+        data[3] = course1ToMeanDiff;
+        data[4] = course1ToCourse2Diff;
+        data[5] = course1ScorePecent;
+        data[6] = course2ScorePecent;
+        data[7] = course3ScorePecent;
+        data[8] = course4ScorePecent;
+        data[9] = course5ScorePecent;
+
+
+        sendData.Raise(this, data);
 
         sendDialogue.Raise(this, lines);
     }
