@@ -656,7 +656,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990936756}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 081e724a0cfbbd042a93ac68cafdc382, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: bf2d0caa165ba6044954a1016130362c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}
@@ -670,12 +670,14 @@ VideoPlayer:
   m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -1129,7 +1131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215fa68c50eaf8244ba1029c38766550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDialogueDone: {fileID: 0}
+  StartOnSceneEntry: 1
+  onDialogueDone: {fileID: 11400000, guid: 54a4ad891bf87b24b81e6a9ed9390bff, type: 2}
+  onDoneTalking: {fileID: 11400000, guid: 02236cccd71cfeb4c9ef77f27394f9ef, type: 2}
+  onLetterTyped: {fileID: 11400000, guid: 033704fff31a8e140b14272145aa7f49, type: 2}
   ui: {fileID: 1651213920}
   lines:
   - . . .

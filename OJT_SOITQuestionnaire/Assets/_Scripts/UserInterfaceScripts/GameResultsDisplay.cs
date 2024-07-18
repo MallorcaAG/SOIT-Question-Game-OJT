@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEditor;
 using UnityEngine;
 
 public class GameResultsDisplay : MonoBehaviour
@@ -23,8 +24,8 @@ public class GameResultsDisplay : MonoBehaviour
     private int scoreTotal;
 
     private readonly int StartVid = Animator.StringToHash("CourseVideoStart");
-    private readonly int EndVid = Animator.StringToHash("CourseVideoEnd");
-
+    private readonly int EndVid = Animator.StringToHash("CourseVideoEnd"); 
+private readonly int OutroAnimation = Animator.StringToHash("OutroAnimation");
     private readonly int TalkingDone = Animator.StringToHash("TalkingDone");
 
     // Start is called before the first frame update
@@ -88,14 +89,41 @@ public class GameResultsDisplay : MonoBehaviour
             case 1:
                 myAnimation.CrossFade(StartVid, 0, 0);
 
-                onCourseVideoStart.Raise(this, 0);
+                onCourseVideoStart.Raise(this, getCategory((int)scoresRanked[0].x));
                 break;
 
             case 2:
                 myAnimation.CrossFade(EndVid, .5f, 0);
 
                 break;
+
+            case 4:
+                Debug.Log("I die");
+
+                Application.Quit();
+
+                break;
         }
+    }
+
+    public void finalAnimation()
+    {
+        myAnimation.CrossFade(OutroAnimation, 1f, 0);
+
+        StartCoroutine(die());
+    }
+
+    IEnumerator die()
+    {
+        Debug.Log("I die");
+
+        yield return new WaitForSeconds(23.5f);
+
+        Time.timeScale = 0;
+        Application.Quit();
+        EditorApplication.Exit(0);
+
+        Debug.Log("didnt die whoops???");
     }
 
     public void adjustStatsGraphPosition()

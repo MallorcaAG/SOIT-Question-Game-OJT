@@ -6,8 +6,11 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private bool StartOnSceneEntry = false;
+
     [SerializeField] private GameEvent onDialogueDone;
     [SerializeField] private GameEvent onDoneTalking;
+    [SerializeField] private GameEvent onLetterTyped;
     [SerializeField] private TextMeshProUGUI ui;
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
@@ -24,6 +27,11 @@ public class Dialogue : MonoBehaviour
     private void Start()
     {
         remainingTime = textDelayBeforeNextLine;
+
+        if(StartOnSceneEntry)
+        {
+            Initialize();
+        }
     }
 
     public void Initialize()
@@ -88,6 +96,7 @@ public class Dialogue : MonoBehaviour
         {
             isTyping = true;
             ui.text += c;
+            onLetterTyped.Raise(this, null);
             yield return new WaitForSeconds(textSpeed);
         }
         isTyping = false;

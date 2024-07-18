@@ -39,13 +39,13 @@ public class DataHolder : MonoBehaviour
                       "Mean: " + statisticsData[1].ToString("0.##") + "\n" +
                       "Median: " + statisticsData[2].ToString("0.##") + "\n" +
                       course1 + ": " + scoresOrderRanking[0].y + "pts (" + statisticsData[5].ToString("0.##") + "%)\n" +
-                      course2 + ": " + scoresOrderRanking[1].y + "pts (" + statisticsData[6].ToString("0.##") + "%\n" +
-                      course3 + ": " + scoresOrderRanking[2].y + "pts (" + statisticsData[7].ToString("0.##") + "%\n" +
-                      course4 + ": " + scoresOrderRanking[3].y + "pts (" + statisticsData[8].ToString("0.##") + "%\n" +
-                      course5 + ": " + scoresOrderRanking[4].y + "pts (" + statisticsData[9].ToString("0.##") + "%\n" +
-                      course1 + "to mean diff: " + statisticsData[3].ToString("0.##") + "%\n" +
+                      course2 + ": " + scoresOrderRanking[1].y + "pts (" + statisticsData[6].ToString("0.##") + "%)\n" +
+                      course3 + ": " + scoresOrderRanking[2].y + "pts (" + statisticsData[7].ToString("0.##") + "%)\n" +
+                      course4 + ": " + scoresOrderRanking[3].y + "pts (" + statisticsData[8].ToString("0.##") + "%)\n" +
+                      course5 + ": " + scoresOrderRanking[4].y + "pts (" + statisticsData[9].ToString("0.##") + "%)\n" +
+                      course1 + " to mean diff: " + statisticsData[3].ToString("0.##") + "%\n" +
                       "% diff (" + course1 + ", Mean): +" + Mathf.Abs(((statisticsData[1] / scoresOrderRanking[0].y) - 1) * 100).ToString("0.##") + "%\n" +
-                      course1 + "to " + course2 + "diff: " + statisticsData[3].ToString("0.##") + "%\n" +
+                      course1 + " to " + course2 + "diff: " + statisticsData[3].ToString("0.##") + "%\n" +
                       "% diff (" + course1 + ", " + course2 + "): " + Mathf.Abs(((scoresOrderRanking[1].y / scoresOrderRanking[0].y) - 1) * 100).ToString("0.##") + "\n";
 
 
