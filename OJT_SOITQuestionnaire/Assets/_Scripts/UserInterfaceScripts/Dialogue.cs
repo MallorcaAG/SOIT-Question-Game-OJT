@@ -96,7 +96,12 @@ public class Dialogue : MonoBehaviour
         {
             isTyping = true;
             ui.text += c;
-            onLetterTyped.Raise(this, null);
+
+            if(!(c == ' '))
+            {
+                onLetterTyped.Raise(this, null);
+            }
+
             yield return new WaitForSeconds(textSpeed);
         }
         isTyping = false;

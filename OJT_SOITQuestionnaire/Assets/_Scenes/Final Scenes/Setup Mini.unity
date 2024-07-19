@@ -274,6 +274,121 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &285095058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285095064}
+  - component: {fileID: 285095062}
+  - component: {fileID: 285095061}
+  - component: {fileID: 285095060}
+  - component: {fileID: 285095059}
+  m_Layer: 5
+  m_Name: Birb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &285095059
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285095058}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!222 &285095060
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285095058}
+  m_CullTransparentMesh: 1
+--- !u!114 &285095061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285095058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 033704fff31a8e140b14272145aa7f49, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 285095062}
+        m_TargetAssemblyTypeName: ChirpController, Manager
+        m_MethodName: Chirp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &285095062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285095058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc64975a677eb0d45bccb70614668780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chirpObj: {fileID: 3825774738243210517, guid: 96b3e825f65c178479da0f13ac83be8e, type: 3}
+  chirpingOdds: {x: 10, y: 8}
+  chirps:
+  - {fileID: 8300000, guid: fe2b4070d309cd94b8189ef28e0224ed, type: 3}
+  - {fileID: 8300000, guid: b6d23d21854641946a53a2beb0249961, type: 3}
+  - {fileID: 8300000, guid: 3fb71e398b77fdc498c0f7eee24df95c, type: 3}
+  - {fileID: 8300000, guid: e1d621461fdddf74ebe44233281026bc, type: 3}
+  - {fileID: 8300000, guid: 7903c835f09aed546a0beb089a7564d6, type: 3}
+  - {fileID: 8300000, guid: ef9fed30657573f41af28365dc6cceec, type: 3}
+  - {fileID: 8300000, guid: 94a566c0de6325d4080b0ce308deec45, type: 3}
+  - {fileID: 8300000, guid: 1e21064ac09d3e94883a9383f04c6b3e, type: 3}
+  - {fileID: 8300000, guid: 754f8f79ce7c03d42bce1b5552bdf586, type: 3}
+  - {fileID: 8300000, guid: 58a6b04d1ea150a43bf6f4c833791405, type: 3}
+  - {fileID: 8300000, guid: b753c71f50f190a48b564dde2d10b0c6, type: 3}
+  - {fileID: 8300000, guid: 105a5a965be625841ac8b5a5b585ad89, type: 3}
+--- !u!224 &285095064
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285095058}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.38281, y: 0.38281, z: 0.38281}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.7453126, y: 0}
+  m_AnchorMax: {x: 0.7453126, y: 0}
+  m_AnchoredPosition: {x: 547.80475, y: 69.28908}
+  m_SizeDelta: {x: 1441.499, y: 810.843}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &316659312
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,8 +1005,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -958,7 +1073,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 40}
+  m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1839822471
 GameObject:
@@ -1137,20 +1252,20 @@ MonoBehaviour:
   onLetterTyped: {fileID: 11400000, guid: 033704fff31a8e140b14272145aa7f49, type: 2}
   ui: {fileID: 1651213920}
   lines:
-  - . . .
+  - '                                             '
   - Oh hello there froshie!
-  - "and welcome to Mapua University\u2019s School of Information Technology!"
-  - My name is CardiB
-  - and you can think of me as your friend throughout your time here at the university.
+  - "And welcome to Mapua University\u2019s School of Information Technology!"
+  - My name's Cardinal
+  - And you can think of me as your friend throughout your time here at the university.
   - Here at SOIT we offer 5 majors.
-  - These being Computer Science (CS), Information Technology (IT), Information System
+  - These are Computer Science (CS), Information Technology (IT), Information System
     (IS), Entertainment and Multimedia Computing (EMC), and Data Science (DS)
   - It seems to me that you have quite the interest in technology
-  - "but you\u2019re somewhat unsure of what program to take. "
+  - "But you\u2019re somewhat unsure of what program to take. "
   - 'Fret not, I can help you with that. . . '
-  - "with this quick quiz, to help you think about where you\u2019d be a good fit! "
+  - "With this quick quiz, to help you think about where you\u2019d be a good fit! "
   - 'Now, this quiz is not meant to dictate what major you should take '
-  - 'but rather be a helpful tool to nudge you towards your ideal program. '
+  - 'But rather be a helpful tool to nudge you towards your ideal program. '
   - It is ultimately up to you, where you want to take your future.
   - 'With all that said, let''s begin! '
   textSpeed: 0.045

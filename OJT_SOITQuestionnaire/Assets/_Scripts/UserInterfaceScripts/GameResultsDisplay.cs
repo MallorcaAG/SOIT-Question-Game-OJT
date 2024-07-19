@@ -121,7 +121,7 @@ private readonly int OutroAnimation = Animator.StringToHash("OutroAnimation");
 
         Time.timeScale = 0;
         Application.Quit();
-        EditorApplication.Exit(0);
+        //EditorApplication.Exit(0);
 
         Debug.Log("didnt die whoops???");
     }

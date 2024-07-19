@@ -35,18 +35,18 @@ public class DataHolder : MonoBehaviour
         string course5 = GameResultsDisplay.getCategory((int)scoresOrderRanking[4].x);
 
 
-        string text = "Total Score: " + statisticsData[0].ToString("0.##") + "\n" +
+        string text = /*"Total Score: " + statisticsData[0].ToString("0.##") + "\n" +
                       "Mean: " + statisticsData[1].ToString("0.##") + "\n" +
-                      "Median: " + statisticsData[2].ToString("0.##") + "\n" +
-                      course1 + ": " + scoresOrderRanking[0].y + "pts (" + statisticsData[5].ToString("0.##") + "%)\n" +
-                      course2 + ": " + scoresOrderRanking[1].y + "pts (" + statisticsData[6].ToString("0.##") + "%)\n" +
-                      course3 + ": " + scoresOrderRanking[2].y + "pts (" + statisticsData[7].ToString("0.##") + "%)\n" +
-                      course4 + ": " + scoresOrderRanking[3].y + "pts (" + statisticsData[8].ToString("0.##") + "%)\n" +
-                      course5 + ": " + scoresOrderRanking[4].y + "pts (" + statisticsData[9].ToString("0.##") + "%)\n" +
+                      "Median: " + statisticsData[2].ToString("0.##") + "\n" +*/
+                      "1ST: " + course1 + " (" + statisticsData[5].ToString("0.##") + "%)\n" +
+                      "2ND: " + course2 + " (" + statisticsData[6].ToString("0.##") + "%)\n" +
+                      "3RD: " + course3 + " (" + statisticsData[7].ToString("0.##") + "%)\n" +
+                      "4TH: " + course4 + " (" + statisticsData[8].ToString("0.##") + "%)\n" +
+                      "5TH: " + course5 + " (" + statisticsData[9].ToString("0.##") + "%)\n" /*+
                       course1 + " to mean diff: " + statisticsData[3].ToString("0.##") + "%\n" +
                       "% diff (" + course1 + ", Mean): +" + Mathf.Abs(((statisticsData[1] / scoresOrderRanking[0].y) - 1) * 100).ToString("0.##") + "%\n" +
                       course1 + " to " + course2 + "diff: " + statisticsData[3].ToString("0.##") + "%\n" +
-                      "% diff (" + course1 + ", " + course2 + "): " + Mathf.Abs(((scoresOrderRanking[1].y / scoresOrderRanking[0].y) - 1) * 100).ToString("0.##") + "\n";
+                      "% diff (" + course1 + ", " + course2 + "): " + Mathf.Abs(((scoresOrderRanking[1].y / scoresOrderRanking[0].y) - 1) * 100).ToString("0.##") + "\n"*/;
 
 
         dataDisplay.text = text;
