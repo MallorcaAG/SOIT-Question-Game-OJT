@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7fce25976e2c4498c9e169135f2312, type: 3}
+  m_Name: BaseQ3
+  m_EditorClassIdentifier: 
+  questionText: Answer true if the following statement applies to you, false if otherwise.
+    I am interested in how computers and software work.
+  questionType: 0
+  items:
+  - {fileID: 11400000, guid: 6f95bfbee7da8b840bc5a52bc3bcedd0, type: 2}
+  - {fileID: 11400000, guid: 7a6653af44dd9834fa6f2c02077186ee, type: 2}
+  scrambleItems: 0
+  scrambledArray:
+  - {fileID: 11400000, guid: 6f95bfbee7da8b840bc5a52bc3bcedd0, type: 2}
+  - {fileID: 11400000, guid: 7a6653af44dd9834fa6f2c02077186ee, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7fce25976e2c4498c9e169135f2312, type: 3}
+  m_Name: BaseQ8
+  m_EditorClassIdentifier: 
+  questionText: How would you describe your approach to challenges? Select all that
+    apply.
+  questionType: 1
+  items:
+  - {fileID: 11400000, guid: 1dded0909a88f914fa165296c78c3742, type: 2}
+  - {fileID: 11400000, guid: 185efbcdcc2065043a68647079083769, type: 2}
+  - {fileID: 11400000, guid: 5f91f0b8f9f02a24c887d1f4d2778271, type: 2}
+  - {fileID: 11400000, guid: ad13df48e254c074d8b6bf739ef32aec, type: 2}
+  - {fileID: 11400000, guid: 9f1ca0f9df7523e438f49af8a7826f7d, type: 2}
+  scrambleItems: 1
+  scrambledArray: []

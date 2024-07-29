@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7fce25976e2c4498c9e169135f2312, type: 3}
+  m_Name: BaseQ7
+  m_EditorClassIdentifier: 
+  questionText: What type of projects do you find most fulfilling?
+  questionType: 0
+  items:
+  - {fileID: 11400000, guid: e9cd7b9885845094c9712c7402146ac2, type: 2}
+  - {fileID: 11400000, guid: fae962a7509f36d45b747a620a093ef0, type: 2}
+  - {fileID: 11400000, guid: 1770d0e94c94d5d43990c80fbb9418cf, type: 2}
+  - {fileID: 11400000, guid: 2872ede07948688409b2eaed4f98da84, type: 2}
+  - {fileID: 11400000, guid: b89b34e1dcb74264c989e2d8a24d5b4b, type: 2}
+  scrambleItems: 1
+  scrambledArray: []

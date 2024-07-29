@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3029917739089181021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9104731501100835852}
+  - component: {fileID: 7061131790499676240}
+  - component: {fileID: 1669816648726048504}
+  m_Layer: 0
+  m_Name: QuestionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9104731501100835852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029917739089181021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 397.3663, y: 182.58951, z: 0.8943964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7061131790499676240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029917739089181021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d02abb44020df449af522e252424d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentQuestion: 0
+  questions:
+  - {fileID: 11400000, guid: 84c7ecf163f34e84aa4acfa79dff6e6c, type: 2}
+  - {fileID: 11400000, guid: 24171cdfd6bc8534198ad3044158dd0d, type: 2}
+  - {fileID: 11400000, guid: c0335a28978da6e4f80025ccad95cddf, type: 2}
+  - {fileID: 11400000, guid: 0596a97f57d1a194f850e7d97d167673, type: 2}
+  - {fileID: 11400000, guid: c7e729dc71030ca4e939906176464374, type: 2}
+  - {fileID: 11400000, guid: 550e7222cf869bd4db576b678f899be4, type: 2}
+  - {fileID: 11400000, guid: 0a70a0834ad2c264c841606a43aebd14, type: 2}
+  - {fileID: 11400000, guid: f4a6c166e90f62e4cb175623249999f3, type: 2}
+  - {fileID: 11400000, guid: 9150fd60cedcb154a99cb22b30ef70e7, type: 2}
+  - {fileID: 11400000, guid: 64fb51692eb40ce44913c896f72f017f, type: 2}
+  - {fileID: 11400000, guid: f12f29cb5751b694f8289589df54ee06, type: 2}
+  - {fileID: 11400000, guid: 738bdc8bd0d14a44b9032b467864de61, type: 2}
+  - {fileID: 11400000, guid: 485065394ad2abe448d00b92e8fd4f1a, type: 2}
+  - {fileID: 11400000, guid: 182586703521ba94894fdd7b69453b48, type: 2}
+  - {fileID: 11400000, guid: 1d534764d9bc4144aa385e74c126573c, type: 2}
+  - {fileID: 11400000, guid: 497d2344c0c808e4d83cf3fbf9f6bde9, type: 2}
+  - {fileID: 11400000, guid: b44a0c65ffa887043826fe7638dde9e5, type: 2}
+  - {fileID: 11400000, guid: 87e862c28b39869498ba1181d3c81e3e, type: 2}
+  - {fileID: 11400000, guid: 2fa6dac327ae4624895db9a677e76d2f, type: 2}
+  - {fileID: 11400000, guid: 6c4023edd7201a44d823629c02da5842, type: 2}
+  - {fileID: 11400000, guid: 4cffaa6ffe8825e4a8bdb959c0a4edcf, type: 2}
+  - {fileID: 11400000, guid: 63051900760b6d14cac1190c13ddf2c8, type: 2}
+  - {fileID: 11400000, guid: 257526b90af2c0a4facd2178cbb74150, type: 2}
+  - {fileID: 11400000, guid: 498da7a7444d3ef458e90585da82414e, type: 2}
+  - {fileID: 11400000, guid: 076eda2cafa52f640a67f00a527a039f, type: 2}
+  - {fileID: 11400000, guid: 43110ac789902244f92bc7559a238ca8, type: 2}
+  - {fileID: 11400000, guid: fafd8c323ec0a7842b07534065528486, type: 2}
+  - {fileID: 11400000, guid: 61cc77c019e99054d8f3378191ab7631, type: 2}
+  - {fileID: 11400000, guid: 99d4ba82ca49eb548bcc7179699128b5, type: 2}
+  - {fileID: 11400000, guid: 49edea63c0ec89d4db80bdac914d1a20, type: 2}
+  - {fileID: 11400000, guid: bdf4a7092e7661446a5aa3af3857beb0, type: 2}
+  - {fileID: 11400000, guid: adff8611bf31cc54fb0ec4444e2ea359, type: 2}
+  - {fileID: 11400000, guid: 870e2143b610f70449921c975f62e595, type: 2}
+  - {fileID: 11400000, guid: ff59ec98b7863da40b457b6787a2ce36, type: 2}
+  - {fileID: 11400000, guid: 6ef422841ae6dbd439a7612434c47320, type: 2}
+  - {fileID: 11400000, guid: 26be5eab1c5ece74ba79e0ea733d6733, type: 2}
+  - {fileID: 11400000, guid: 86170f75c6ea81343981fb68da65d564, type: 2}
+  scrambleQuestions: 1
+  scrambledQuestionsArray: []
+  onQuizStart: {fileID: 11400000, guid: 365ee03a8377b314087badad6704d73a, type: 2}
+  onSendQuestionDetails: {fileID: 11400000, guid: f17a51759eb4c554c9eaf51ba573ab55, type: 2}
+  onQuizEnd: {fileID: 11400000, guid: cc47255f8ec7f5e4680c8615f47a1408, type: 2}
+--- !u!114 &1669816648726048504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029917739089181021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50945a91e42dd9143b55914e3e09b4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 03a07ffe7166dcc49a97a6aa4968a554, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7061131790499676240}
+        m_TargetAssemblyTypeName: QuestionManager, Manager
+        m_MethodName: nextQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

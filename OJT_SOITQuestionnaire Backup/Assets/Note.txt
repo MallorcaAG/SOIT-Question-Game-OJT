@@ -1,0 +1,2 @@
+PROBLEMS: 
+ - Performance needs to be checked. Fans already on full blast the moment the game runs.
